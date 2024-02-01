@@ -50,31 +50,29 @@ nav{
    
    
 }
-.nav-list .inner ul{
+.nav-list ul{
     list-style-type: none;
     display: flex;
-    width: 50%;
+    width: 100%;
     justify-content: space-around;
     /* flex-wrap: wrap; */
 }
-.nav-list .inner{
-    width: 100%;
+.nav-list{
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
     font-size: 18px;
 }
-.nav-list{
-    width: 70%;
-}
+/* .nav-list{
+    width: 60%;
+} */
 nav .icon{
     display: none;
     font-size: 28px;
 }
-.nav-list i{
-    font-size: 28px;
-}
+
 nav  .icon i{
     color: #000;
 }
@@ -101,8 +99,9 @@ a{
     font-size: 18px;
     font-weight: 700;
 }
-.nav-list i{
+nav i{
     color: #000;
+    font-size: 28px;
 }
 
 
@@ -131,7 +130,6 @@ a{
         align-items: center;
         justify-content: center;
         row-gap: 32px;
-        margin-bottom: 20px;
       
     }
     .nav-list{
@@ -148,12 +146,12 @@ a{
        
         z-index: 1;
        background-color:#fff;
-       padding: 10px 0px;
+       padding: 20px 0px;
 
       
     }
   
-    .nav-list .inner{
+    /* .nav-list .inner{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -161,7 +159,7 @@ a{
         row-gap: 32px;
        
         
-    }
+    } */
     nav .icon{
         display: block;
         width: 10%;
@@ -220,7 +218,7 @@ a{
         align-items: center;
         justify-content: center;
         row-gap: 32px;
-        margin-bottom: 20px;
+       
       
     }
     .nav-list{
@@ -237,11 +235,11 @@ a{
        
         z-index: 1;
        background-color:#fff;
-       padding: 10px 0px;
+       padding: 20px 0px;
 
       
     }
-    .nav-list .inner{
+    /* .nav-list .inner{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -249,7 +247,7 @@ a{
         row-gap: 32px;
        
         
-    }
+    } */
     nav .icon{
         display: block;
         width: 10%;
@@ -309,7 +307,7 @@ a{
         align-items: center;
         justify-content: center;
         row-gap: 32px;
-        margin-bottom: 20px;
+      
       
     }
     .nav-list{
@@ -326,11 +324,11 @@ a{
        
         z-index: 1;
        background-color:#fff;
-       padding: 10px 0px;
+       padding: 20px 0px;
 
       
     }
-    .nav-list .inner{
+    /* .nav-list .inner{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -338,7 +336,7 @@ a{
         row-gap: 32px;
        
         
-    }
+    } */
     nav .icon{
         display: block;
         width: 10%;
@@ -433,13 +431,14 @@ text-align: center;
     width: 150px;
     height: 50px;
     border-radius: 5px;
-    background-color: rgb(76, 202, 76);
+    background-color: rgb(108, 204, 108);
     border: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 600;
     padding: 5px;
     margin: auto;
   
@@ -529,36 +528,46 @@ text-align: center;
 .products-header-container{
     display: flex;
      column-gap: 35px;
-   row-gap: 10px;
+    row-gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
- align-items: center;
+ /* align-items: center; */
 }
 .card1{
-    width: 25%;
+    width: 100%;
     background-color: rgb(224, 224, 224);
     display: flex;
     flex-direction: column;
+    height: 400px;
 
     border-radius: 10px;
     padding: 40px 0px;
     row-gap: 32px;
-    box-shadow: 0px 4px 8px 0px rgba(121, 120, 120, 0.2);
+    box-shadow: 0px 4px 8px 0px rgba(204, 204, 204, 0.2);
     
 }
-/* .products-header-container .card2:first-of-type{
-    background-color: #fff;
+.contain{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+
+/* .card1:nth-child(5)
+{
+    margin-top: -130px;
 } */
 .card2{
     padding: 40px 0px;
-  width: 25%;
+  width: 100%;
   background-color: rgb(224, 224, 224);
   display: flex;
   flex-direction: column;
-
+height: 270px;
   border-radius: 10px;
   row-gap: 16px;
-  box-shadow: 0px 4px 8px 0px rgba(121, 120, 120, 0.2);
+  box-shadow: 0px 4px 8px 0px rgba(204, 204, 204, 0.2);
 }
 .card1 img{
     width: 75%;
@@ -585,38 +594,50 @@ text-align: center;
 
 @media  screen and (max-width: 1200px) and (min-width:992px){
 
-    .card1,.card2{
-        width: 40%;
-     }
-  
 
-  
+    .contain{
+        width: 45%;
+    }
+    .contain:last-child{
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        column-gap: 35px;
+    }
 }
 @media  screen and (max-width: 992px) and (min-width:786px){
    
-    .card1,.card2{
-        width: 40%;
-     }
- 
-
+   
+    .contain{
+        width: 45%;
+    }
+    .contain:last-child{
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        column-gap: 35px;
+    }
 
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
 
-  
-     .card1,.card2{
-        width: 70%;
-     }
- 
+    .contain{
+        width: 45%;
+    }
+    .contain:last-child{
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        column-gap: 35px;
+    }
 
 }
 @media  screen and (max-width: 600px){
 
+.contain{
+    width: 100%;
+}
 
-
- .card1,.card2{
-    width: 90%;
- }
 
 }
 
@@ -627,6 +648,7 @@ text-align: center;
     display: flex;
     flex-direction: column;
     row-gap: 40px;
+    margin-top: -150px;
 }
 .products-section h2{
     text-align: center;
@@ -640,7 +662,7 @@ text-align: center;
    flex-wrap: wrap;
 }
 .products-section button{
-    width: 150px;
+    width: 200px;
     height: 50px;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
@@ -650,6 +672,7 @@ text-align: center;
     align-items: center;
     color: #000;
     font-size: 16px;
+    font-weight: 700;
     padding: 5px;
     box-shadow: 0px 4px 8px 0px rgba(121, 120, 120, 0.2);
   margin: auto;
@@ -683,7 +706,7 @@ text-align: center;
     column-gap: 20px;
 }
 .price p{
-    color: green;
+    color: rgb(20, 201, 20);
 }
 .price del{
     color: #565559;
@@ -704,6 +727,7 @@ text-align: center;
     align-items: center;
     color: #fff;
     font-size: 16px;
+   
     padding: 5px;
 
 
@@ -1139,7 +1163,7 @@ footer{
 
 }
 
-.links {
+.links{
 
     display: flex;
     width: 80%;
@@ -1299,7 +1323,8 @@ span{
         justify-content: center;
     }
     .copy-rights{
-        font-size: 16px;}
+        font-size: 16px;
+    }
  
 
   
