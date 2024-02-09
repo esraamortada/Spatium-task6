@@ -1233,6 +1233,7 @@ footer{
   footer .links{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
  
     flex-wrap: wrap;
     row-gap: 32px;
@@ -1265,12 +1266,9 @@ footer{
   .link-list{
     
     text-align: center;
-
-    width: max-content;
+    width: 45%;
   }
-  .link-list ul{
-    width: fit-content;
-  }
+ 
 
   
 }
@@ -1360,4 +1358,8 @@ span{
    
  
   
+}
+
+.display-block {
+    display: block;
 }
